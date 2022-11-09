@@ -1,29 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #22282a;
+}
+body{
+    background-color: #1a3147;
+}
+button{
+    cursor: pointer;
+    padding: 10px;
+    background: #22282a;
+    border-radius: 7px;
+    color: #cccccc;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    padding: 10px;
+}
+input[type=checkbox] {
+    transform: scale(1.8);
+
+}
 .App{
-    font-family: Cambria;
+    font-family: "Segoe UI Historic";
     font-size: 30px;
     margin: 20px auto;
-    background-color: #7e959e;
+    background-color: #7d97a1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.title{
-    color: #b4b4b4;
-    padding: 10px;
-    font-size: 70px;
-}
 .AddToDo{
-    background-color: #a9b9cf;
     display: flex;
     justify-content: space-between;
+    margin: 20px;
 }
-.ToDoList{
-    background-color: #a9cfca;
+.AddToDo input{
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
 }
+
 .ToDoList-item{
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: #55c8f7;
+    padding: 10px;
+    border-radius: 5px;
 }
 .ToDoFooter{
     display: flex;
@@ -31,9 +63,18 @@
     background-color: #a9b9cf;
 }
 .Todo-container{
-    width: 350px;
-    margin: 30px auto;
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
 }
 .Todo-container div{
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ToDoFooter-container{
+    display: flex;
+    justify-content: space-between;
 }
